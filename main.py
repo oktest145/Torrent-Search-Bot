@@ -98,7 +98,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"**Leechers:** `{torrentList[i]['Leechers']}`\n"
                                              f"**Uploader:** `{torrentList[i]['Uploader']}`\n"
                                              f"**Uploaded on {torrentList[i]['Date']}**\n\n"
-                                             f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @AHToolsBot",
+                                             f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @Ironman_cloud",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
@@ -150,7 +150,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"**Rating:** `{torrentList[i]['Rating']}`\n"
                                              f"**Duration:** `{torrentList[i]['Runtime']}`\n"
                                              f"**Released on {torrentList[i]['ReleaseDate']}**\n\n"
-                                             f"**Torrent Download Links:**\n{dl_links}\n\nPowered By @AHToolsBot",
+                                             f"**Torrent Download Links:**\n{dl_links}\n\nPowered By @Ironman_cloud",
                                 parse_mode="Markdown",
                                 disable_web_page_preview=True
                             ),
