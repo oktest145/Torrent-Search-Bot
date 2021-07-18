@@ -19,7 +19,7 @@ DEFAULT_SEARCH_MARKUP = [
                      InlineKeyboardButton("Go Inline", switch_inline_query="")],
                     [InlineKeyboardButton("Search Anime", switch_inline_query_current_chat="!a "),
                      InlineKeyboardButton("GO Inline", switch_inline_query_current_chat="!a ")],
-                    [InlineKeyboardButton("Developer: @AbirHasan2005", url="https://t.me/AbirHasan2005")]
+                    [InlineKeyboardButton("Developer ❤️", url="https://github.com/AbirHasan2005")]
                 ]
 
 
@@ -29,7 +29,7 @@ async def start_handler(_, message: Message):
         await message.reply_text(
             text="Hello, I am Torrent Search Bot!\n"
                  "I can search Torrent Magnetic Links from Inline.\n\n"
-                 "Made by @AbirHasan2005",
+                 "Made with 🐍 by @ironman_cloud",
             disable_web_page_preview=True,
             parse_mode="Markdown",
             reply_markup=InlineKeyboardMarkup(DEFAULT_SEARCH_MARKUP)
@@ -201,7 +201,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                              f"**Leechers:** `{torrentList[i]['Leecher']}`\n"
                                              f"**Size:** `{torrentList[i]['Size']}`\n"
                                              f"**Upload Date:** `{torrentList[i]['Date']}`\n\n"
-                                             f"**Magnet:** \n`{torrentList[i]['Magnet']}`\n\nPowered By @AHToolsBot",
+                                             f"**Magnet:** \n`{torrentList[i]['Magnet']}`\n\nPowered By @Ironman_Cloud",
                                 parse_mode="Markdown"
                             ),
                             reply_markup=InlineKeyboardMarkup(
@@ -241,7 +241,7 @@ async def inline_handlers(_, inline: InlineQuery):
                                          f"__Uploaded by {torrentList[i]['UploadedBy']}__\n"
                                          f"__Uploaded {torrentList[i]['DateUploaded']}__\n"
                                          f"__Last Checked {torrentList[i]['LastChecked']}__\n\n"
-                                         f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @AHToolsBot",
+                                         f"**Magnet:**\n`{torrentList[i]['Magnet']}`\n\nPowered By @Ironman_cloud",
                             parse_mode="Markdown"
                         ),
                         reply_markup=InlineKeyboardMarkup(
